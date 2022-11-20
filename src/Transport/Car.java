@@ -4,6 +4,10 @@ import java.time.LocalDate;
 
 public class Car extends Transport {
 
+    public void setFuel(String дизель) {
+
+    }
+
     public static class Key {
         private final boolean disStart;
         private final boolean keylessAccess;
@@ -232,6 +236,10 @@ public class Car extends Transport {
     @Override
     public void refill() {
         System.out.println("Топиво "+ getFuel());
+    }
+
+    private String getFuel() {
+
     }
 
     @Override
