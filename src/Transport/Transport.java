@@ -9,7 +9,6 @@ public abstract class Transport {
     private String color;
     private int maxSpeed;
     private String fuel;
-
     public Transport(String brand, String model, int productionYear, String productionCountry, String fuel) {
         this(brand, model, productionYear, productionCountry, "Серый", 1582, fuel);
 

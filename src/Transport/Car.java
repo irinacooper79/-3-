@@ -242,7 +242,6 @@ public class Car extends Transport {
     public boolean isSummerTyres() {
         return tiresWinOrSum;
     }
-
     public void changeTyres() {
         tiresWinOrSum = !tiresWinOrSum;
     }

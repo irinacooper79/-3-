@@ -1,5 +1,4 @@
 package Transport;
-
 public class Bus  extends Transport{
 
     public String destination;
@@ -16,6 +15,8 @@ public class Bus  extends Transport{
             this.destination = "место назначения - Москва-Петушки";
         }
 
+    }
+
     public Bus(String brand, String model, int productionYear, String productionCountry, String color, int maxSpeed ) {
         super(brand, model, productionYear, productionCountry, color, maxSpeed, "Дизель");
     }
@@ -23,7 +24,9 @@ public class Bus  extends Transport{
     @Override
     public void refill() {
 
-       @Override
+          }
+
+    @Override
     protected void refill (Boolean gasoline, Boolean diesel, Boolean electricity) {
         if (gasoline || diesel) {
             statusRefill = "пополнен";
