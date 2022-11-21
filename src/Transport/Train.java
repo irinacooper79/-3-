@@ -69,6 +69,7 @@ public class Train extends Transport {
     public void setNumberOfWagons(int numberOfWagons) {
         this.numberOfWagons = numberOfWagons;
     }
+
     @Override
     public void refill() {
 
