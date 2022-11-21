@@ -1,5 +1,4 @@
 package Transport;
-
 public class Bus  extends Transport{
 
     public String destination;
