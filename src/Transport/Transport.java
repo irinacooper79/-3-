@@ -9,9 +9,18 @@ public abstract class Transport {
     private String color;
     private int maxSpeed;
     private String fuel;
+    private final List <Sponsor> sponsors = new ArrayList<>();
+    privet final List <Mechanic> mechanics = new ArrayList<>();
+
     public Transport(String brand, String model, int productionYear, String productionCountry, String fuel) {
         this(brand, model, productionYear, productionCountry, "Серый", 1582, fuel);
 
+        public void addSponsor (Sponsor sponsor){
+            this.sponsors.add(sponsor);
+        }
+        public void addMechanic (Mechanic mechanic){
+            this.mechanics.add(mechanic);
+        }
         if (brand == null) {
             this.brand = "audi";
         } else {
